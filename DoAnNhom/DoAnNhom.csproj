@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34A020BB-3375-45E3-B5EB-0ED8FFA34DCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAnNhom</RootNamespace>
+    <AssemblyName>DoAnNhom</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCamera.Designer.cs">
+      <DependentUpon>fCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLaptop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLaptop.Designer.cs">
+      <DependentUpon>fLaptop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLinhKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLinhKien.Designer.cs">
+      <DependentUpon>fLinhKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPC.Designer.cs">
+      <DependentUpon>fPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThanhToan.Designer.cs">
+      <DependentUpon>fThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTTTK.Designer.cs">
+      <DependentUpon>fTTTK.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fCamera.resx">
+      <DependentUpon>fCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLaptop.resx">
+      <DependentUpon>fLaptop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLinhKien.resx">
+      <DependentUpon>fLinhKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPC.resx">
+      <DependentUpon>fPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThanhToan.resx">
+      <DependentUpon>fThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fTTTK.resx">
+      <DependentUpon>fTTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLLDoAn\BLLDoAn.csproj">
+      <Project>{e2265fd9-3872-4a5d-a54d-1d74ff3b83e4}</Project>
+      <Name>BLLDoAn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTODoAn\DTODoAn.csproj">
+      <Project>{453da05a-ee88-4aba-97c3-bae0e754d8dc}</Project>
+      <Name>DTODoAn</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
