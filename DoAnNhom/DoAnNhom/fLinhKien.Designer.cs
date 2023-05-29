@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.pLinhKien = new System.Windows.Forms.Panel();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.lblNgayNhap = new System.Windows.Forms.Label();
-            this.txtNgayNhap = new System.Windows.Forms.TextBox();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.btnThemVaoGio = new System.Windows.Forms.Button();
+            this.lblTongTien = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.lblDonGia = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblTenLinhKien = new System.Windows.Forms.Label();
@@ -49,11 +48,10 @@
             // 
             // pLinhKien
             // 
-            this.pLinhKien.Controls.Add(this.btnThem);
-            this.pLinhKien.Controls.Add(this.btnSua);
-            this.pLinhKien.Controls.Add(this.btnXoa);
-            this.pLinhKien.Controls.Add(this.lblNgayNhap);
-            this.pLinhKien.Controls.Add(this.txtNgayNhap);
+            this.pLinhKien.Controls.Add(this.btnTim);
+            this.pLinhKien.Controls.Add(this.btnThemVaoGio);
+            this.pLinhKien.Controls.Add(this.lblTongTien);
+            this.pLinhKien.Controls.Add(this.lbl1);
             this.pLinhKien.Controls.Add(this.lblDonGia);
             this.pLinhKien.Controls.Add(this.lblSoLuong);
             this.pLinhKien.Controls.Add(this.lblTenLinhKien);
@@ -62,59 +60,50 @@
             this.pLinhKien.Controls.Add(this.textBox3);
             this.pLinhKien.Controls.Add(this.textBox2);
             this.pLinhKien.Controls.Add(this.textBox1);
-            this.pLinhKien.Location = new System.Drawing.Point(247, 19);
+            this.pLinhKien.Location = new System.Drawing.Point(43, 19);
             this.pLinhKien.Name = "pLinhKien";
-            this.pLinhKien.Size = new System.Drawing.Size(983, 215);
+            this.pLinhKien.Size = new System.Drawing.Size(1187, 215);
             this.pLinhKien.TabIndex = 7;
             // 
-            // btnThem
+            // btnTim
             // 
-            this.btnThem.Location = new System.Drawing.Point(518, 162);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(102, 33);
-            this.btnThem.TabIndex = 5;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnTim.Location = new System.Drawing.Point(577, 62);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(102, 33);
+            this.btnTim.TabIndex = 2;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // btnThemVaoGio
             // 
-            this.btnSua.Location = new System.Drawing.Point(809, 162);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(102, 33);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnThemVaoGio.Location = new System.Drawing.Point(577, 117);
+            this.btnThemVaoGio.Name = "btnThemVaoGio";
+            this.btnThemVaoGio.Size = new System.Drawing.Size(102, 33);
+            this.btnThemVaoGio.TabIndex = 2;
+            this.btnThemVaoGio.Text = "Thêm vào giỏ";
+            this.btnThemVaoGio.UseVisualStyleBackColor = true;
             // 
-            // btnXoa
+            // lblTongTien
             // 
-            this.btnXoa.Location = new System.Drawing.Point(669, 162);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(102, 33);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.lblTongTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTongTien.Location = new System.Drawing.Point(799, 53);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(193, 33);
+            this.lblTongTien.TabIndex = 0;
             // 
-            // lblNgayNhap
+            // lbl1
             // 
-            this.lblNgayNhap.AutoSize = true;
-            this.lblNgayNhap.Location = new System.Drawing.Point(515, 102);
-            this.lblNgayNhap.Name = "lblNgayNhap";
-            this.lblNgayNhap.Size = new System.Drawing.Size(73, 16);
-            this.lblNgayNhap.TabIndex = 3;
-            this.lblNgayNhap.Text = "Ngày nhập";
-            // 
-            // txtNgayNhap
-            // 
-            this.txtNgayNhap.Location = new System.Drawing.Point(639, 89);
-            this.txtNgayNhap.Multiline = true;
-            this.txtNgayNhap.Name = "txtNgayNhap";
-            this.txtNgayNhap.Size = new System.Drawing.Size(272, 33);
-            this.txtNgayNhap.TabIndex = 4;
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(859, 16);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(63, 16);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Tổng tiền";
             // 
             // lblDonGia
             // 
             this.lblDonGia.AutoSize = true;
-            this.lblDonGia.Location = new System.Drawing.Point(515, 38);
+            this.lblDonGia.Location = new System.Drawing.Point(43, 188);
             this.lblDonGia.Name = "lblDonGia";
             this.lblDonGia.Size = new System.Drawing.Size(53, 16);
             this.lblDonGia.TabIndex = 0;
@@ -123,7 +112,7 @@
             // lblSoLuong
             // 
             this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Location = new System.Drawing.Point(42, 159);
+            this.lblSoLuong.Location = new System.Drawing.Point(43, 135);
             this.lblSoLuong.Name = "lblSoLuong";
             this.lblSoLuong.Size = new System.Drawing.Size(60, 16);
             this.lblSoLuong.TabIndex = 0;
@@ -132,7 +121,7 @@
             // lblTenLinhKien
             // 
             this.lblTenLinhKien.AutoSize = true;
-            this.lblTenLinhKien.Location = new System.Drawing.Point(42, 102);
+            this.lblTenLinhKien.Location = new System.Drawing.Point(43, 80);
             this.lblTenLinhKien.Name = "lblTenLinhKien";
             this.lblTenLinhKien.Size = new System.Drawing.Size(86, 16);
             this.lblTenLinhKien.TabIndex = 0;
@@ -141,7 +130,7 @@
             // lblMaLinhKien
             // 
             this.lblMaLinhKien.AutoSize = true;
-            this.lblMaLinhKien.Location = new System.Drawing.Point(42, 38);
+            this.lblMaLinhKien.Location = new System.Drawing.Point(43, 26);
             this.lblMaLinhKien.Name = "lblMaLinhKien";
             this.lblMaLinhKien.Size = new System.Drawing.Size(81, 16);
             this.lblMaLinhKien.TabIndex = 0;
@@ -149,7 +138,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(639, 25);
+            this.textBox4.Location = new System.Drawing.Point(167, 175);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(272, 33);
@@ -157,7 +146,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(166, 146);
+            this.textBox3.Location = new System.Drawing.Point(167, 122);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(272, 33);
@@ -165,7 +154,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 89);
+            this.textBox2.Location = new System.Drawing.Point(167, 67);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 33);
@@ -173,7 +162,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 25);
+            this.textBox1.Location = new System.Drawing.Point(167, 13);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 33);
@@ -182,11 +171,11 @@
             // dataGridViewLinhKien
             // 
             this.dataGridViewLinhKien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLinhKien.Location = new System.Drawing.Point(247, 233);
+            this.dataGridViewLinhKien.Location = new System.Drawing.Point(43, 233);
             this.dataGridViewLinhKien.Name = "dataGridViewLinhKien";
             this.dataGridViewLinhKien.RowHeadersWidth = 51;
             this.dataGridViewLinhKien.RowTemplate.Height = 24;
-            this.dataGridViewLinhKien.Size = new System.Drawing.Size(983, 290);
+            this.dataGridViewLinhKien.Size = new System.Drawing.Size(1187, 290);
             this.dataGridViewLinhKien.TabIndex = 6;
             // 
             // fLinhKien
@@ -209,6 +198,10 @@
         #endregion
 
         private System.Windows.Forms.Panel pLinhKien;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnThemVaoGio;
+        private System.Windows.Forms.Label lblTongTien;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lblDonGia;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.Label lblTenLinhKien;
@@ -218,10 +211,5 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridViewLinhKien;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Label lblNgayNhap;
-        private System.Windows.Forms.TextBox txtNgayNhap;
     }
 }

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.pLaptop = new System.Windows.Forms.Panel();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.btnThemVaoGio = new System.Windows.Forms.Button();
+            this.lblTongTien = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.lblDonGia = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblTenLaptop = new System.Windows.Forms.Label();
@@ -38,22 +42,16 @@
             this.txtTenLaptop = new System.Windows.Forms.TextBox();
             this.txtMaLaptop = new System.Windows.Forms.TextBox();
             this.dataGridViewLaptop = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.lblNgayNhap = new System.Windows.Forms.Label();
-            this.txtNgayNhap = new System.Windows.Forms.TextBox();
             this.pLaptop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLaptop)).BeginInit();
             this.SuspendLayout();
             // 
             // pLaptop
             // 
-            this.pLaptop.Controls.Add(this.btnThem);
-            this.pLaptop.Controls.Add(this.btnSua);
-            this.pLaptop.Controls.Add(this.btnXoa);
-            this.pLaptop.Controls.Add(this.lblNgayNhap);
-            this.pLaptop.Controls.Add(this.txtNgayNhap);
+            this.pLaptop.Controls.Add(this.btnTim);
+            this.pLaptop.Controls.Add(this.btnThemVaoGio);
+            this.pLaptop.Controls.Add(this.lblTongTien);
+            this.pLaptop.Controls.Add(this.lbl1);
             this.pLaptop.Controls.Add(this.lblDonGia);
             this.pLaptop.Controls.Add(this.lblSoLuong);
             this.pLaptop.Controls.Add(this.lblTenLaptop);
@@ -62,15 +60,50 @@
             this.pLaptop.Controls.Add(this.txtSoLuong);
             this.pLaptop.Controls.Add(this.txtTenLaptop);
             this.pLaptop.Controls.Add(this.txtMaLaptop);
-            this.pLaptop.Location = new System.Drawing.Point(260, 26);
+            this.pLaptop.Location = new System.Drawing.Point(43, 19);
             this.pLaptop.Name = "pLaptop";
-            this.pLaptop.Size = new System.Drawing.Size(966, 215);
+            this.pLaptop.Size = new System.Drawing.Size(1187, 215);
             this.pLaptop.TabIndex = 7;
+            // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(577, 62);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(102, 33);
+            this.btnTim.TabIndex = 2;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
+            // 
+            // btnThemVaoGio
+            // 
+            this.btnThemVaoGio.Location = new System.Drawing.Point(577, 117);
+            this.btnThemVaoGio.Name = "btnThemVaoGio";
+            this.btnThemVaoGio.Size = new System.Drawing.Size(102, 33);
+            this.btnThemVaoGio.TabIndex = 2;
+            this.btnThemVaoGio.Text = "Thêm vào giỏ";
+            this.btnThemVaoGio.UseVisualStyleBackColor = true;
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTongTien.Location = new System.Drawing.Point(799, 53);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(193, 33);
+            this.lblTongTien.TabIndex = 0;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(859, 16);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(63, 16);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Tổng tiền";
             // 
             // lblDonGia
             // 
             this.lblDonGia.AutoSize = true;
-            this.lblDonGia.Location = new System.Drawing.Point(524, 36);
+            this.lblDonGia.Location = new System.Drawing.Point(28, 188);
             this.lblDonGia.Name = "lblDonGia";
             this.lblDonGia.Size = new System.Drawing.Size(53, 16);
             this.lblDonGia.TabIndex = 0;
@@ -79,7 +112,7 @@
             // lblSoLuong
             // 
             this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Location = new System.Drawing.Point(49, 159);
+            this.lblSoLuong.Location = new System.Drawing.Point(28, 135);
             this.lblSoLuong.Name = "lblSoLuong";
             this.lblSoLuong.Size = new System.Drawing.Size(60, 16);
             this.lblSoLuong.TabIndex = 0;
@@ -88,7 +121,7 @@
             // lblTenLaptop
             // 
             this.lblTenLaptop.AutoSize = true;
-            this.lblTenLaptop.Location = new System.Drawing.Point(49, 99);
+            this.lblTenLaptop.Location = new System.Drawing.Point(28, 80);
             this.lblTenLaptop.Name = "lblTenLaptop";
             this.lblTenLaptop.Size = new System.Drawing.Size(68, 16);
             this.lblTenLaptop.TabIndex = 0;
@@ -97,7 +130,7 @@
             // lblMaLaptop
             // 
             this.lblMaLaptop.AutoSize = true;
-            this.lblMaLaptop.Location = new System.Drawing.Point(49, 36);
+            this.lblMaLaptop.Location = new System.Drawing.Point(28, 26);
             this.lblMaLaptop.Name = "lblMaLaptop";
             this.lblMaLaptop.Size = new System.Drawing.Size(71, 16);
             this.lblMaLaptop.TabIndex = 0;
@@ -105,7 +138,7 @@
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(625, 23);
+            this.txtDonGia.Location = new System.Drawing.Point(146, 175);
             this.txtDonGia.Multiline = true;
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(272, 33);
@@ -113,7 +146,7 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(167, 146);
+            this.txtSoLuong.Location = new System.Drawing.Point(146, 122);
             this.txtSoLuong.Multiline = true;
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(272, 33);
@@ -121,7 +154,7 @@
             // 
             // txtTenLaptop
             // 
-            this.txtTenLaptop.Location = new System.Drawing.Point(167, 86);
+            this.txtTenLaptop.Location = new System.Drawing.Point(146, 67);
             this.txtTenLaptop.Multiline = true;
             this.txtTenLaptop.Name = "txtTenLaptop";
             this.txtTenLaptop.Size = new System.Drawing.Size(272, 33);
@@ -129,7 +162,7 @@
             // 
             // txtMaLaptop
             // 
-            this.txtMaLaptop.Location = new System.Drawing.Point(167, 23);
+            this.txtMaLaptop.Location = new System.Drawing.Point(146, 13);
             this.txtMaLaptop.Multiline = true;
             this.txtMaLaptop.Name = "txtMaLaptop";
             this.txtMaLaptop.Size = new System.Drawing.Size(272, 33);
@@ -138,62 +171,18 @@
             // dataGridViewLaptop
             // 
             this.dataGridViewLaptop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLaptop.Location = new System.Drawing.Point(260, 240);
+            this.dataGridViewLaptop.Location = new System.Drawing.Point(43, 233);
             this.dataGridViewLaptop.Name = "dataGridViewLaptop";
             this.dataGridViewLaptop.RowHeadersWidth = 51;
             this.dataGridViewLaptop.RowTemplate.Height = 24;
-            this.dataGridViewLaptop.Size = new System.Drawing.Size(966, 315);
+            this.dataGridViewLaptop.Size = new System.Drawing.Size(1187, 290);
             this.dataGridViewLaptop.TabIndex = 6;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(527, 159);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(102, 33);
-            this.btnThem.TabIndex = 5;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(795, 159);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(102, 33);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(657, 159);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(102, 33);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // lblNgayNhap
-            // 
-            this.lblNgayNhap.AutoSize = true;
-            this.lblNgayNhap.Location = new System.Drawing.Point(524, 99);
-            this.lblNgayNhap.Name = "lblNgayNhap";
-            this.lblNgayNhap.Size = new System.Drawing.Size(73, 16);
-            this.lblNgayNhap.TabIndex = 3;
-            this.lblNgayNhap.Text = "Ngày nhập";
-            // 
-            // txtNgayNhap
-            // 
-            this.txtNgayNhap.Location = new System.Drawing.Point(625, 86);
-            this.txtNgayNhap.Multiline = true;
-            this.txtNgayNhap.Name = "txtNgayNhap";
-            this.txtNgayNhap.Size = new System.Drawing.Size(272, 33);
-            this.txtNgayNhap.TabIndex = 4;
             // 
             // fLaptop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 588);
+            this.ClientSize = new System.Drawing.Size(1272, 543);
             this.Controls.Add(this.pLaptop);
             this.Controls.Add(this.dataGridViewLaptop);
             this.Name = "fLaptop";
@@ -209,6 +198,10 @@
         #endregion
 
         private System.Windows.Forms.Panel pLaptop;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnThemVaoGio;
+        private System.Windows.Forms.Label lblTongTien;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lblDonGia;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.Label lblTenLaptop;
@@ -218,10 +211,5 @@
         private System.Windows.Forms.TextBox txtTenLaptop;
         private System.Windows.Forms.TextBox txtMaLaptop;
         private System.Windows.Forms.DataGridView dataGridViewLaptop;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Label lblNgayNhap;
-        private System.Windows.Forms.TextBox txtNgayNhap;
     }
 }

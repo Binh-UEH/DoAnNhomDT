@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.pCamera = new System.Windows.Forms.Panel();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.btnThemVaoGio = new System.Windows.Forms.Button();
+            this.lblTongTien = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.lblDonGia = new System.Windows.Forms.Label();
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblTenCamera = new System.Windows.Forms.Label();
@@ -38,22 +42,16 @@
             this.txtTenCamera = new System.Windows.Forms.TextBox();
             this.txtMaCamera = new System.Windows.Forms.TextBox();
             this.dataGridViewCamera = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.lblNgayNhap = new System.Windows.Forms.Label();
-            this.txtNgayNhap = new System.Windows.Forms.TextBox();
             this.pCamera.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCamera)).BeginInit();
             this.SuspendLayout();
             // 
             // pCamera
             // 
-            this.pCamera.Controls.Add(this.btnThem);
-            this.pCamera.Controls.Add(this.btnSua);
-            this.pCamera.Controls.Add(this.btnXoa);
-            this.pCamera.Controls.Add(this.lblNgayNhap);
-            this.pCamera.Controls.Add(this.txtNgayNhap);
+            this.pCamera.Controls.Add(this.btnTim);
+            this.pCamera.Controls.Add(this.btnThemVaoGio);
+            this.pCamera.Controls.Add(this.lblTongTien);
+            this.pCamera.Controls.Add(this.lbl1);
             this.pCamera.Controls.Add(this.lblDonGia);
             this.pCamera.Controls.Add(this.lblSoLuong);
             this.pCamera.Controls.Add(this.lblTenCamera);
@@ -62,15 +60,50 @@
             this.pCamera.Controls.Add(this.txtSoLuong);
             this.pCamera.Controls.Add(this.txtTenCamera);
             this.pCamera.Controls.Add(this.txtMaCamera);
-            this.pCamera.Location = new System.Drawing.Point(256, 19);
+            this.pCamera.Location = new System.Drawing.Point(43, 19);
             this.pCamera.Name = "pCamera";
-            this.pCamera.Size = new System.Drawing.Size(974, 215);
+            this.pCamera.Size = new System.Drawing.Size(1187, 215);
             this.pCamera.TabIndex = 7;
+            // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(577, 62);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(102, 33);
+            this.btnTim.TabIndex = 2;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
+            // 
+            // btnThemVaoGio
+            // 
+            this.btnThemVaoGio.Location = new System.Drawing.Point(577, 117);
+            this.btnThemVaoGio.Name = "btnThemVaoGio";
+            this.btnThemVaoGio.Size = new System.Drawing.Size(102, 33);
+            this.btnThemVaoGio.TabIndex = 2;
+            this.btnThemVaoGio.Text = "Thêm vào giỏ";
+            this.btnThemVaoGio.UseVisualStyleBackColor = true;
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblTongTien.Location = new System.Drawing.Point(799, 53);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(193, 33);
+            this.lblTongTien.TabIndex = 0;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(859, 16);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(63, 16);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Tổng tiền";
             // 
             // lblDonGia
             // 
             this.lblDonGia.AutoSize = true;
-            this.lblDonGia.Location = new System.Drawing.Point(529, 38);
+            this.lblDonGia.Location = new System.Drawing.Point(40, 188);
             this.lblDonGia.Name = "lblDonGia";
             this.lblDonGia.Size = new System.Drawing.Size(53, 16);
             this.lblDonGia.TabIndex = 0;
@@ -79,7 +112,7 @@
             // lblSoLuong
             // 
             this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Location = new System.Drawing.Point(67, 169);
+            this.lblSoLuong.Location = new System.Drawing.Point(40, 135);
             this.lblSoLuong.Name = "lblSoLuong";
             this.lblSoLuong.Size = new System.Drawing.Size(60, 16);
             this.lblSoLuong.TabIndex = 0;
@@ -88,7 +121,7 @@
             // lblTenCamera
             // 
             this.lblTenCamera.AutoSize = true;
-            this.lblTenCamera.Location = new System.Drawing.Point(67, 103);
+            this.lblTenCamera.Location = new System.Drawing.Point(40, 80);
             this.lblTenCamera.Name = "lblTenCamera";
             this.lblTenCamera.Size = new System.Drawing.Size(82, 16);
             this.lblTenCamera.TabIndex = 0;
@@ -97,7 +130,7 @@
             // lblCamera
             // 
             this.lblCamera.AutoSize = true;
-            this.lblCamera.Location = new System.Drawing.Point(67, 38);
+            this.lblCamera.Location = new System.Drawing.Point(40, 26);
             this.lblCamera.Name = "lblCamera";
             this.lblCamera.Size = new System.Drawing.Size(77, 16);
             this.lblCamera.TabIndex = 0;
@@ -105,7 +138,7 @@
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(630, 25);
+            this.txtDonGia.Location = new System.Drawing.Point(156, 175);
             this.txtDonGia.Multiline = true;
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(272, 33);
@@ -113,7 +146,7 @@
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(183, 156);
+            this.txtSoLuong.Location = new System.Drawing.Point(156, 122);
             this.txtSoLuong.Multiline = true;
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(272, 33);
@@ -121,7 +154,7 @@
             // 
             // txtTenCamera
             // 
-            this.txtTenCamera.Location = new System.Drawing.Point(183, 90);
+            this.txtTenCamera.Location = new System.Drawing.Point(156, 67);
             this.txtTenCamera.Multiline = true;
             this.txtTenCamera.Name = "txtTenCamera";
             this.txtTenCamera.Size = new System.Drawing.Size(272, 33);
@@ -129,7 +162,7 @@
             // 
             // txtMaCamera
             // 
-            this.txtMaCamera.Location = new System.Drawing.Point(183, 25);
+            this.txtMaCamera.Location = new System.Drawing.Point(156, 13);
             this.txtMaCamera.Multiline = true;
             this.txtMaCamera.Name = "txtMaCamera";
             this.txtMaCamera.Size = new System.Drawing.Size(272, 33);
@@ -138,62 +171,18 @@
             // dataGridViewCamera
             // 
             this.dataGridViewCamera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCamera.Location = new System.Drawing.Point(256, 233);
+            this.dataGridViewCamera.Location = new System.Drawing.Point(43, 233);
             this.dataGridViewCamera.Name = "dataGridViewCamera";
             this.dataGridViewCamera.RowHeadersWidth = 51;
             this.dataGridViewCamera.RowTemplate.Height = 24;
-            this.dataGridViewCamera.Size = new System.Drawing.Size(974, 313);
+            this.dataGridViewCamera.Size = new System.Drawing.Size(1187, 290);
             this.dataGridViewCamera.TabIndex = 6;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(532, 161);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(102, 33);
-            this.btnThem.TabIndex = 10;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(800, 161);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(102, 33);
-            this.btnSua.TabIndex = 11;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(662, 161);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(102, 33);
-            this.btnXoa.TabIndex = 12;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // lblNgayNhap
-            // 
-            this.lblNgayNhap.AutoSize = true;
-            this.lblNgayNhap.Location = new System.Drawing.Point(529, 103);
-            this.lblNgayNhap.Name = "lblNgayNhap";
-            this.lblNgayNhap.Size = new System.Drawing.Size(73, 16);
-            this.lblNgayNhap.TabIndex = 8;
-            this.lblNgayNhap.Text = "Ngày nhập";
-            // 
-            // txtNgayNhap
-            // 
-            this.txtNgayNhap.Location = new System.Drawing.Point(630, 90);
-            this.txtNgayNhap.Multiline = true;
-            this.txtNgayNhap.Name = "txtNgayNhap";
-            this.txtNgayNhap.Size = new System.Drawing.Size(272, 33);
-            this.txtNgayNhap.TabIndex = 9;
             // 
             // fCamera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 574);
+            this.ClientSize = new System.Drawing.Size(1272, 543);
             this.Controls.Add(this.pCamera);
             this.Controls.Add(this.dataGridViewCamera);
             this.Name = "fCamera";
@@ -209,6 +198,10 @@
         #endregion
 
         private System.Windows.Forms.Panel pCamera;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnThemVaoGio;
+        private System.Windows.Forms.Label lblTongTien;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lblDonGia;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.Label lblTenCamera;
@@ -218,10 +211,5 @@
         private System.Windows.Forms.TextBox txtTenCamera;
         private System.Windows.Forms.TextBox txtMaCamera;
         private System.Windows.Forms.DataGridView dataGridViewCamera;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Label lblNgayNhap;
-        private System.Windows.Forms.TextBox txtNgayNhap;
     }
 }

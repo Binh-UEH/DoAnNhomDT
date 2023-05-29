@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnQuayLai = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox5
@@ -113,21 +112,11 @@
             this.button1.Text = "Cập nhật";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnQuayLai
-            // 
-            this.btnQuayLai.Location = new System.Drawing.Point(325, 411);
-            this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Size = new System.Drawing.Size(210, 63);
-            this.btnQuayLai.TabIndex = 16;
-            this.btnQuayLai.Text = "Quay lại";
-            this.btnQuayLai.UseVisualStyleBackColor = true;
-            // 
             // fTTTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1272, 543);
-            this.Controls.Add(this.btnQuayLai);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -151,6 +140,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnQuayLai;
     }
 }

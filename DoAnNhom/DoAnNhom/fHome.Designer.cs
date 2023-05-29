@@ -30,8 +30,6 @@
         private void InitializeComponent()
         {
             this.pnMenu = new System.Windows.Forms.Panel();
-            this.btnKH = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnTTTK = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
@@ -40,28 +38,34 @@
             this.btnLap = new System.Windows.Forms.Button();
             this.btnPC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,8 +74,6 @@
             // 
             // pnMenu
             // 
-            this.pnMenu.Controls.Add(this.btnKH);
-            this.pnMenu.Controls.Add(this.btnHome);
             this.pnMenu.Controls.Add(this.btnDangXuat);
             this.pnMenu.Controls.Add(this.btnTTTK);
             this.pnMenu.Controls.Add(this.btnThanhToan);
@@ -79,34 +81,14 @@
             this.pnMenu.Controls.Add(this.btnCamera);
             this.pnMenu.Controls.Add(this.btnLap);
             this.pnMenu.Controls.Add(this.btnPC);
-            this.pnMenu.Location = new System.Drawing.Point(39, 24);
+            this.pnMenu.Location = new System.Drawing.Point(3, 3);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(167, 516);
+            this.pnMenu.Size = new System.Drawing.Size(1260, 38);
             this.pnMenu.TabIndex = 0;
-            // 
-            // btnKH
-            // 
-            this.btnKH.Location = new System.Drawing.Point(9, 330);
-            this.btnKH.Name = "btnKH";
-            this.btnKH.Size = new System.Drawing.Size(151, 31);
-            this.btnKH.TabIndex = 6;
-            this.btnKH.Text = "Khách hàng";
-            this.btnKH.UseVisualStyleBackColor = true;
-            this.btnKH.Click += new System.EventHandler(this.btnKH_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(9, 20);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(151, 45);
-            this.btnHome.TabIndex = 5;
-            this.btnHome.Text = "HOME";
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnDangXuat
             // 
-            this.btnDangXuat.Location = new System.Drawing.Point(9, 469);
+            this.btnDangXuat.Location = new System.Drawing.Point(1106, 4);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(151, 31);
             this.btnDangXuat.TabIndex = 4;
@@ -115,7 +97,7 @@
             // 
             // btnTTTK
             // 
-            this.btnTTTK.Location = new System.Drawing.Point(9, 432);
+            this.btnTTTK.Location = new System.Drawing.Point(949, 4);
             this.btnTTTK.Name = "btnTTTK";
             this.btnTTTK.Size = new System.Drawing.Size(151, 31);
             this.btnTTTK.TabIndex = 3;
@@ -125,7 +107,7 @@
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(9, 283);
+            this.btnThanhToan.Location = new System.Drawing.Point(631, 4);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(151, 31);
             this.btnThanhToan.TabIndex = 3;
@@ -135,7 +117,7 @@
             // 
             // btnLinhKien
             // 
-            this.btnLinhKien.Location = new System.Drawing.Point(9, 234);
+            this.btnLinhKien.Location = new System.Drawing.Point(474, 4);
             this.btnLinhKien.Name = "btnLinhKien";
             this.btnLinhKien.Size = new System.Drawing.Size(151, 31);
             this.btnLinhKien.TabIndex = 3;
@@ -145,7 +127,7 @@
             // 
             // btnCamera
             // 
-            this.btnCamera.Location = new System.Drawing.Point(9, 188);
+            this.btnCamera.Location = new System.Drawing.Point(317, 4);
             this.btnCamera.Name = "btnCamera";
             this.btnCamera.Size = new System.Drawing.Size(151, 31);
             this.btnCamera.TabIndex = 2;
@@ -155,7 +137,7 @@
             // 
             // btnLap
             // 
-            this.btnLap.Location = new System.Drawing.Point(9, 140);
+            this.btnLap.Location = new System.Drawing.Point(160, 4);
             this.btnLap.Name = "btnLap";
             this.btnLap.Size = new System.Drawing.Size(151, 31);
             this.btnLap.TabIndex = 1;
@@ -165,7 +147,7 @@
             // 
             // btnPC
             // 
-            this.btnPC.Location = new System.Drawing.Point(9, 92);
+            this.btnPC.Location = new System.Drawing.Point(3, 4);
             this.btnPC.Name = "btnPC";
             this.btnPC.Size = new System.Drawing.Size(151, 31);
             this.btnPC.TabIndex = 0;
@@ -175,26 +157,38 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox10);
+            this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(244, 24);
+            this.panel2.Location = new System.Drawing.Point(27, 99);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(980, 516);
+            this.panel2.Size = new System.Drawing.Size(1209, 429);
             this.panel2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(988, 380);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 31);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "SP1";
             // 
             // label7
             // 
@@ -228,6 +222,14 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "SP1";
             // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(988, 177);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(147, 31);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "SP1";
+            // 
             // label5
             // 
             this.label5.Location = new System.Drawing.Point(765, 177);
@@ -260,6 +262,14 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "SP1";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(985, 219);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(150, 142);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Location = new System.Drawing.Point(526, 219);
@@ -291,6 +301,14 @@
             this.pictureBox10.Size = new System.Drawing.Size(150, 142);
             this.pictureBox10.TabIndex = 4;
             this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(985, 20);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(150, 142);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -328,17 +346,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1272, 566);
+            this.ClientSize = new System.Drawing.Size(1272, 543);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnMenu);
             this.Name = "fHome";
             this.Text = "Home";
             this.pnMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -358,23 +378,25 @@
         private System.Windows.Forms.Button btnPC;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnKH;
     }
 }

@@ -74,7 +74,7 @@ namespace DoAnNhom
             this.Hide();
             PanelHolder.SetPanel(pnMenu);
 
-            fThanhToan fPay = new fThanhToan();
+            fLinhKien fPay = new fLinhKien();
             fPay.FormClosed += _FormClosed;
             fPay.Show();
         }
@@ -87,26 +87,6 @@ namespace DoAnNhom
             fTTTK fTT = new fTTTK();
             fTT.FormClosed += _FormClosed;
             fTT.Show();
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            PanelHolder.SetPanel(pnMenu);
-
-            fHome fHome = new fHome();
-            fHome.FormClosed += _FormClosed;
-            fHome.Show();
-        }
-
-        private void btnKH_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            PanelHolder.SetPanel(pnMenu);
-
-            fKhachHang fKH = new fKhachHang();
-            fKH.FormClosed += _FormClosed;
-            fKH.Show();
         }
     }
     public static class PanelHolder
